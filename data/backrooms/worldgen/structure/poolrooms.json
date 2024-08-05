@@ -5,10 +5,11 @@
   "spawn_overrides": {},
   "terrain_adaptation": "none",
   "start_pool": "backrooms:poolrooms/center",
-  "size": 5,
+  "size": 20,
   "start_height": {
     "absolute": 16
   },
   "max_distance_from_center": 80,
+  "dimension_padding": 4,
   "use_expansion_hack": true
 }
