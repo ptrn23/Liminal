@@ -1,6 +1,6 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#backrooms:the_deep_end",
+  "biomes": "minecraft:the_void",
   "step": "underground_structures",
   "spawn_overrides": {},
   "terrain_adaptation": "none",

@@ -132,16 +132,33 @@
             "if_true": {
               "type": "minecraft:biome",
               "biome_is": [
-                "backrooms:the_lobby"
+                "backrooms:poolrooms"
               ]
             },
             "then_run": {
               "type": "minecraft:block",
               "result_state": {
-                "Name": "minecraft:stripped_oak_log",
-                "Properties": {
-                  "axis": "y"
-                } 
+                "Name": "minecraft:quartz_bricks"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "minecraft:sequence",
+        "sequence": [
+          {
+            "type": "minecraft:condition",
+            "if_true": {
+              "type": "minecraft:biome",
+              "biome_is": [
+                "backrooms:the_deep_end"
+              ]
+            },
+            "then_run": {
+              "type": "minecraft:block",
+              "result_state": {
+                "Name": "minecraft:dark_prismarine"
               }
             }
           }
