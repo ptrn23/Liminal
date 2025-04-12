@@ -5,7 +5,10 @@
   "ore_veins_enabled": false,
   "legacy_random_source": true,
   "default_block": {
-    "Name": "minecraft:stone"
+    "Name": "minecraft:stripped_birch_log",
+    "Properties": {
+      "axis": "y"
+    } 
   },
   "default_fluid": {
     "Name": "minecraft:water",
@@ -138,10 +141,30 @@
             "then_run": {
               "type": "minecraft:block",
               "result_state": {
-                "Name": "minecraft:stripped_oak_log",
+                "Name": "minecraft:stripped_birch_log",
                 "Properties": {
                   "axis": "y"
                 } 
+              }
+            }
+          }
+        ]
+      },
+      {
+        "type": "minecraft:sequence",
+        "sequence": [
+          {
+            "type": "minecraft:condition",
+            "if_true": {
+              "type": "minecraft:biome",
+              "biome_is": [
+                "backrooms:remodeled_mess"
+              ]
+            },
+            "then_run": {
+              "type": "minecraft:block",
+              "result_state": {
+                "Name": "minecraft:smooth_quartz"
               }
             }
           }
